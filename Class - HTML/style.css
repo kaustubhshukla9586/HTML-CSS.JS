@@ -1,0 +1,48 @@
+.bat{
+    color:green  
+}
+#qween{
+    color:red
+}
+#yay{
+    color:rgb(162, 130, 162)
+}
+*{
+    color:blue
+}
+body {
+  /*background-color:yellow;*/
+    background-image: url("https://as2.ftcdn.net/v2/jpg/07/08/91/43/1000_F_708914308_t7aA9xF8yQ75Q2ElwtgJezRTHeVhUsoA.jpg"),url(https://as2.ftcdn.net/v2/jpg/15/83/91/65/1000_F_1583916555_vHrGM396PPlO7HKF0vtYSk1YnU6XQOG5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+}
+h1:hover{
+    color:black
+}
+a[href="https://www.flipkart.com"]{
+    color:aqua
+}
+div{
+    color:blue;
+    background-color: aqua;
+    width:400px;
+    border:32px double black;
+    height: 300px;
+    padding:30px;
+    /* background-color: beige; */
+    /* background-clip: url("https://as2.ftcdn.net/v2/jpg/07/08/91/43/1000_F_708914308_t7aA9x8yQ75Q2ElwtgJezRTHeVhUsoA.jpg"); */
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/05/76/66/52/1000_F_576665279_gcRYVBPAmS3wty14yy1PlW47ftKulRvO.jpg);
+}
+span{
+    color:hotpink;
+    background:purple;
+}
+b{
+    display:block;
+}
+

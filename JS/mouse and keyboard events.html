@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    
+        
+</head>
+<body>
+        <!--
+        onclick - when clicked on the given element
+        ondblclick - when double clicked on the given element
+        oncontextmenu - when right clicked on the given element
+        onmousedown - whenever we press the mouse button(release is not required)
+        onmouseup - whenever you just release the mouse button(press is not required)
+        onmouseleave - when the mouse pointer leaves the given element  
+        onmouseout - when the mouse pointer moves out of the given element
+        onmousenter - when the mouse pointer enters the given element 
+        onmousehover - when the mouse pointer hovers over the given element 
+        onmousemove - when the mouse pointer moves over the given element
+        -->
+        <!-- <img src="catpfp.jpeg" onmousemove="generate()"> -->
+    
+    <input type="text" onchange="key()" id="demo">
+    <!--
+    onkeydown = activates when even a single key is pressed inside the text box
+    onkeypress = same as onkeydown but some keys like backspace won't activate the function
+    onkeyup = activates when the key is released inside the text box
+    -->
+
+
+
+    <script>
+        // function generate(){
+        //     alert("MEAAAAAAAAAOWWWWWWWWW");
+        // }
+        
+        // let a = 0;
+        // function number(){
+        //     a++
+        //     console.log(a);
+        // }
+
+        function key(){
+            document.getElementById("demo").style.backgroundColor = "dark-blue";
+        }
+        // onfocus = when clicked on the input text box the colour change
+        // onchange = when there is something changed in the input box and then clicked out of the box it activates the function
+        // onselect = when after writing something in the input box and then we select it by our cursor it activates the function
+        // onblur = when you click the object and then focus out the colour changes after focusing out of the iinput box 
+    </script>
+</body>
+</html>

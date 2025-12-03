@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS First</title>
+</head>
+<body>
+    <script>
+
+        //  ========= BASICS ===========
+
+        // var a=10;
+        // var b=20;
+        // document.write(a+b);
+        // document.write("<br>");
+        // document.write("JavaScript First File");
+        // var  multiply = a*b;
+        // document.write("<br>");
+        // document.write(multiply);
+        // a++;
+        // a+=9;
+        // document.write("<br>");
+        // document.write(a);
+
+
+        // OPERARTORS IN JAVASCRIPT================
+
+        // var num1 = 15;
+        // var num2 = "10";
+        // console.log(num1==num2); 
+        // console.log(num1===num2);
+        // console.log(num1 && num2);
+        // console.log("Kaustubh" + "Shukla");
+        // console.log("The value of number 1 is" +num1);
+        // console.log(typeof num1);
+        // console.log(typeof "Kaustubh");
+        // var age = age;
+        // console.log((age>18) ? "Eligible to vote" : "Not eligible to vote");
+
+        
+        //========== CONDITIONS IN JAVASCRIPT ===========
+            
+        // document.write("<br>");
+        // document.write("meow");
+
+        // marks = 101;
+        // if (marks>100 && marks<0){
+        //     document.write("<br>");
+        //     document.write("Invalid Marks");
+        // }
+        // else if (marks>90){
+        //     document.write("<br>");
+        //     document.write("Grade A");
+        // }
+        // else if (marks>80){
+        //     document.write("<br>");
+        //     document.write("Grade B");
+        // }
+        // else if (marks>70){
+        //     document.write("<br>");
+        //     document.write("Grade C");
+        // }
+        // else{
+        //     document.write("<br>");
+        //     document.write("Fail");
+        // }
+        
+        
+        // ========== LOOPS IN JAVASCRIPT ===========
+
+        // var number=1;
+        // while (number<=10){
+        //     document.write(number+"<br>");
+        //     number++;
+        // }
+
+        //  for (let num3=11; num3<=20; num3++){
+        //      document.write(num3+"<br>");
+        //  }
+        // var number=21;
+        //  do{
+        //     document.write(number+"<br>");
+        //     number++;
+        // }while(number<=30)
+
+        // ========== MATCH CASE IN JAVASCRIPT ===========
+
+        // var month = "February"
+
+        // switch(month){
+        //     case "January":
+        //         document.write("31 days");
+        //         break;
+        //     case "February":
+        //         document.write("28 days");
+        //         break;
+        //     case "March":
+        //         document.write("31 days");
+        //         break;
+        //     case "April":
+        //         document.write("30 days");
+        //         break;    
+        //     default:
+        //         document.write("Invalid Month");
+        // }
+
+
+        // ========== ALERT IN JAVASCRIPT ===========
+
+        // alert("This is Box")
+        // confirm("Are you sure you want to proceed?")
+        // var result = confirm("This is confirm popup")
+        // if (result){
+        //     document.write("Hellow this is Kaustubh Shukla")
+        // }
+        // else{
+        //     document.write("You clicked the Cancel Button")
+        // }
+        // var user = prompt("Enter your name")
+        // document.write("Hellow "+user)
+
+        // var num1 = prompt("Enter first number") // This is go for string concatenation
+        // var num2 = Number(prompt("Enter second number"))  // Ths is a number integer and will go for addition 
+
+        // document.write("<br>")
+        // document.write("The sum is: "+(Number(num1)+Number(num2)))  
+
+
+
+        // ========== VARIABLES IN JAVASCRIPT =========== CA IMPORTANT
+
+
+        // 1. Scope Of Variables
+
+        // if (8>7){
+        //     const a=10
+        //     let b=20
+        //     var c=30
+        // }
+        // document.write(c)
+        // document.write(b) // This will fail because let isn't a global variable
+        // document.write(a) // Same for this
+
+        // 2. Intialization 
+
+        //var a 
+        // let a 
+        //const a 
+        // console.log(a) // Output will be undefined for var a
+        // console.log(a) // same as var a
+        // console.log(a) // Error because const
+
+        // 3. Re-Decleration
+        // var a=10;
+        // let a=20;
+        // console.log(a);  // let will fail here
+
+        //4. re-definition
+
+        // const a=10;
+        // a=20;
+        // console.log(a)
+
+        //5. hoisting
+
+        // a=10;
+        // console.log(a);
+        // let a;
+
+        // ========== OBJECTS IN JAVASCRIPT =========== CA IMPORTANT
+        
+        // 1. Object Literal Method
+
+        // let student={
+        //     name: "Kaustubh Shukla",
+        //     age: 18,
+        //     marks: 95,
+        //     roll:20 
+        //     intro:function(){
+        //         //console.log("The student with name " + this.name + " has scored " + this.marks + " marks.")
+        //         //console.log(`The student with name ${this.name} has scored ${this.marks} marks.`)   
+        //     }
+
+        //}
+        //console.log(student)
+        //console.log(student.name)
+        //console.log(student["age"])
+        //console.log("The student name is "+student.name+" and age is "+student.age)
+        //student.intro();
+
+        // let studentb={}
+        // studentb.name="Kaustubh Shukla" ; 
+        // studentb.age=19;
+        // studentb.subject="CSE" ;
+        // console.log(`The student with name ${studentb.name} of age ${studentb.age} is studying subject of ${studentb.subject}.`)
+        
+
+        // 2. Object Constructor
+
+        // let studentc = new Object();
+        // studentc.name="Rishi";
+        // console.log(studentc.name);
+        
+        // 3. Object Create
+
+        // let studentd=Object.create(student)
+        // // console.log(studentd) // This gives an error because we cannot print whole object outside the object itself
+        // console.log(studentd.name)
+        // studentd.reg=345;
+        // console.log(studentd.reg)
+
+
+        // 4. Function Constructor
+        
+        // function student(rollno, studentname) {
+        //         this.roll = rollno;
+        //         this.name = studentname;
+        //     }
+
+        // let studente = new student(36, "Meowmeow");
+        // console.log(studente.roll); // 36
+
+
+        //5. Class
+
+        // class student{
+        //     constructor(rollno,studentname){
+        //         this.roll=rollno;
+        //         this.name=studentname
+                
+        //     }
+        // }
+        // let studentf= new student(67,"Rohan")
+        // console.log(studentf.name)
+
+        //6. Factory Function
+        // function student(roll,name){
+        //     return{
+        //         roll:roll,
+        //         name:name
+        //     }
+        // }
+        // let studentg = new student(23,"Rehan")
+        // console.log(studentg.name)
+
+        //7. Object Assign
+
+        // let studenth=Object.assign({},studentb,student);
+        // console.log(studenth.roll)
+
+        //  square(7);  //function hoisting will work here
+        // function square(num){
+        // return num*num;
+        // document.write(num*num);
+        // }
+        // document.write(square(7));
+        // square(7)
+
+        // square(7); // function hoisting will not work here(it will only work in directly function)
+        // let square=(num)=>{
+        //     document.write(num*num);
+        // }
+        // square(7) 
+
+    </script>
+    
+</body> 
+</html>
