@@ -8,7 +8,7 @@
         
 </head>
 <body>
-        <!--
+        <!-- MOUSE EVENTS
         onclick - when clicked on the given element
         ondblclick - when double clicked on the given element
         oncontextmenu - when right clicked on the given element
@@ -22,33 +22,53 @@
         -->
         <!-- <img src="catpfp.jpeg" onmousemove="generate()"> -->
     
-    <input type="text" onchange="key()" id="demo">
-    <!--
-    onkeydown = activates when even a single key is pressed inside the text box
-    onkeypress = same as onkeydown but some keys like backspace won't activate the function
-    onkeyup = activates when the key is released inside the text box
+        <!-- <input title="xyz" type="text" onchange="key()" id="demo"> -->
+        <!-- KEYBOARD EVENTS
+        onkeydown = activates when even a single key is pressed inside the text box
+        onkeypress = same as onkeydown but some keys like backspace won't activate the function
+        onkeyup = activates when the key is released inside the text box
+        -->
+        
+        <!-- <form onsubmit="return(xyz())">
+            <input type="text" id="id2" title="shd">
+            <br>
+            <span id="id3"></span>
+            <br><br>
+            <input type="submit">
+        </form>
     -->
 
-
-
     <script>
-        // function generate(){
+        //function xyz(){
+        //     let valid = true;
+        //     if (document.getElementById("id2").value==""){
+        //         // alert("This field is mandatory")
+        //         document.getElementById("id3").innerHTML="This field is mandatory.";
+        //         valid = false;
+        //     }
+        //     return valid
+        // } 
+
+         // function generate(){
         //     alert("MEAAAAAAAAAOWWWWWWWWW");
         // }
         
-        // let a = 0;
+        // let a = 0;   
         // function number(){
         //     a++
         //     console.log(a);
         // }
 
-        function key(){
-            document.getElementById("demo").style.backgroundColor = "dark-blue";
-        }
+        // function key(){
+        //     document.getElementById("demo").style.backgroundColor = "blue";
+        // }
+        // FORM EVENTS
         // onfocus = when clicked on the input text box the colour change
         // onchange = when there is something changed in the input box and then clicked out of the box it activates the function
         // onselect = when after writing something in the input box and then we select it by our cursor it activates the function
-        // onblur = when you click the object and then focus out the colour changes after focusing out of the iinput box 
+        // onblur = when you click the object and then focus out the colour changes after focusing out of the iinput box     
+
+        // }
     </script>
 </body>
 </html>
