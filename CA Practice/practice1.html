@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="practice1.css">
+    <title>Practice 1</title>
+</head>
+<body>
+    <div class="nav"></div>
+
+    <div class="center">
+        <div class="form-box">
+                <form class="form-grid" onsubmit="return(login())">
+                    <h1>Application</h1><br>
+                    <input type="text" id="username" placeholder="Username">
+                    <br><br>
+                    <input type="password" id="password" placeholder="Password">
+                    <br><br>
+
+                    <h3>Select your gender</h3> 
+                        <input type="radio" id="id2" name="gender" value="male">
+                        <label for="id2">male</label>
+                        <input type="radio" id="id3" name="gender" value="female">
+                        <label for="id3">female</label>
+                    <br><br>
+                    <input type="submit" value="Login" id="login">
+                    <span id="hello"></span>
+                </form>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <script>
+        function login(){
+            // document.getElementById("login").innerHTML="Logging in...";     
+            alert("Yes Yes Yes")
+        }
+    </script>
+</body>
