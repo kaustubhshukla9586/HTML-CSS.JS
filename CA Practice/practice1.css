@@ -45,11 +45,11 @@
     width: 90%;
     height:80%;
     margin:auto;
-    display: grid;
-    place-items: center;
+    border:2px solid black;
+    /* display: grid;
+    place-items: center; */
     row-gap: 0px;
     column-gap: 0px;
-    /* background-color: aqua; */
 }
 
 #username, #password {

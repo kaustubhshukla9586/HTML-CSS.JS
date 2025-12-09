@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOCUMENT OBJECT MODEL</title>
+
+        <style>
+            .css {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+            }
+        </style>
+    </head>        
+
+<body>
+    <!--For accessing the already given tags with class tag names and also the id of the elements-->
+    <p id="p1" class="cl1">Hello How are you</p>
+    <p id="p2" class="cl2">Hello How are you</p>
+    <p id="p3" class="cl2">Hello How are you</p>
+    <p id="p4" class="cl3">Hello How are you</p>
+
+    <script>
+        // The Document Object Model (DOM) is a programming interface for web documents. 
+        // It represents the page so that programs can change the document structure, style, and content. 
+        // The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+        
+        // create elements and append them to the DOM
+        // let para = document.createElement("p"); // here p is the tag of html and we can use this method to get any html tag and use it
+        // para.innerText = "This is a dynamically created div.";
+        // document.body.appendChild(para);
+
+        // // Another method to create just text we can use this one, only text 
+        // let text=document.createTextNode("Hello, how are you")
+        // document.body.appendChild(text)
+
+        // // now to use CSS we can do this 
+        // const css=document.createElement("div")
+        // document.body.appendChild(css)
+
+        // document.getElementById("p1").innerText="Hello";
+
+        // OTHER WAYS TO ACCESS THE ELEMENTS
+
+        // const element=document.getElementsByClassName("cl2") // Just using the document get element by class name won't work as there are two elements with class names so we will use array indexing 
+        // for (let i=0;i<element.length;i++){
+        //     element[i].innerText="hello";
+        // }
+
+        // const element=document.getElementsByTagName("p")
+        // for (let i=0;i<element.length;i++){
+        //     element[i].innerText="hello";
+        // }
+
+        // document.querySelector("p").innerText="Hello there"; // it will only change the first p tag it finds
+        // const query=document.querySelectorAll("p") // We are using the array indexing method here to change all the p tags 
+        // for (let i=0;i<query.length;i++){
+        //     query[i].innerText="hello everyone"; // whatever we write in i the index would consider that as the index of p tag and change it accordingly
+        // }
+        
+
+
+
+        
+
+    </script>
+</body>
